@@ -16,6 +16,7 @@ Tested with extentions: `txt`
 
 
 Not tested with `pyodide`, but even if not work as it is - surely will be able with some bugfix.
+Not tested on binary mode (soon).
 
 *Requirements*:
 Minimal version of pyscript **2025.2.4**
