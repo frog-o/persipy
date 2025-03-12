@@ -4,9 +4,13 @@ PyScript persistence fs with OPFS
 This is a small tool to mount origin private file system of the browser into pyscript fs.
 
 Tested with `micropython` interpreter on:
+
     - iOS / Safari
+
     - Android / Chrome
+
     - OSX / Chrome, Firefox, Safari
+    
 
 Tested with extentions: `txt`
 
