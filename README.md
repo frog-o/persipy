@@ -41,3 +41,6 @@ await mount_opfs() # by default mount_opfs(mount_path='/opfs')
 with open('/opfs/test.txt', 'w') as f:
     f.write('hello world')
 ```
+
+*Example* 
+[https://rdsm.pyscriptapps.com/persipy/latest/](https://rdsm.pyscriptapps.com/persipy/latest/)
