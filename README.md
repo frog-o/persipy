@@ -10,7 +10,7 @@ Tested with `micropython` interpreter on:
     - Android / Chrome
 
     - OSX / Chrome, Firefox, Safari
-    
+
 
 Tested with extentions: `txt`
 
@@ -18,7 +18,7 @@ Tested with extentions: `txt`
 Not tested with `pyodide`, but even if not work as it is - surely will be able with some bugfix.
 
 *Requirements*:
-Minimal version of pyscript 2025.2.4
+Minimal version of pyscript **2025.2.4**
 
 *Instalation*:
 ```
