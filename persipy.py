@@ -4,8 +4,12 @@ import builtins, os
 
 #-------- main tread part-------------------------------------
 if RUNNING_IN_WORKER == False:
-    from pyscript import RUNNING_IN_WORKER, PyWorker, sync
-    from _pyscript import interpreter
+    from pyscript import PyWorker, sync
+    try:
+        from _pyscript import interpreter
+    except:
+        interpreter = None
+
     OPEN = builtins.open #original open
     MOUNT_PATH = None
 
@@ -51,7 +55,12 @@ def custom_open(file_path, *args, **kwargs):
         
 
 async def mount_opfs(mount_path='/opfs', worker_path='persipy.py', worker_type='micropython'):
-    global MOUNT_PATH
+    global MOUNT_PATH, interpreter
+
+    if not interpreter:
+        print('no interpreter')
+        return False
+
     """to be used in main for init"""
     #check for mounted
     if MOUNT_PATH:
