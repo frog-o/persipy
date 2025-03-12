@@ -5,10 +5,7 @@ import builtins, os
 #-------- main tread part-------------------------------------
 if RUNNING_IN_WORKER == False:
     from pyscript import PyWorker, sync
-    try:
-        from _pyscript import interpreter
-    except:
-        interpreter = None
+    from _pyscript import interpreter
 
     OPEN = builtins.open #original open
     MOUNT_PATH = None
