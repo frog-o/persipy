@@ -149,14 +149,14 @@ if RUNNING_IN_WORKER == True:
 
 #--- visuals ---------------------------------------------------------
 def show_tree(root='/'):
-    print('-' * 60)
+    print('-' * 10)
     arr = os.listdir(root)
     for a in arr:
         if os.path.isdir(a):
             print(f'📁 {a} {os.listdir(a)}')
         else:
             print(f'📝{a}')
-    print('-'*60)
+    print('-'*10)
 
 """
 'r' open for reading (default)
