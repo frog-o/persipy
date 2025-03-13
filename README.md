@@ -42,9 +42,10 @@ with open('/opfs/test.txt', 'w') as f:
     f.write('hello world')
 ```
 
-*Planned*
+*Planned*:
 
 to make it avaivable for modules in same way as in main thread now, so all the threads to share a common and persistent fs
 
-*Example* 
+*Example*:
+
 [https://rdsm.pyscriptapps.com/persipy/latest/](https://rdsm.pyscriptapps.com/persipy/latest/)
