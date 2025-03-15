@@ -20,13 +20,13 @@ Not tested on binary mode (soon).
 
 *Requirements*:
 
-Minimal version of pyscript **2025.2.4**
+Minimal version of pyscript **2025.2.4** testing with 2025.3.1 
 
 *Instalation*:
 ```
 #config.toml of the main thread script
 [files]
-"/persipy.py" = "./persipy.py"
+"https://raw.githubusercontent.com/frog-o/persipy/refs/heads/main/persipy.py" ="/lib/persipy.py"
 ```
 
 
