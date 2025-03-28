@@ -61,7 +61,7 @@ seting up the helper worker
 
 ### *classmethod*:  read()
 
-<details><summary>[path: str, _] ->  <MagicMock name='mock.ArrayBuffer' id='4316313456'></summary>
+<details><summary>[path: str, _] ->  <MagicMock name='mock.ArrayBuffer' id='4378703728'></summary>
 
 
   ```python
@@ -99,7 +99,7 @@ returns `opfs_blob()` see it above
 
 ### *classmethod*:  write()
 
-<details><summary>[path: str, buffer: <MagicMock name='mock.ArrayBuffer' id='4316313456'>, root] ->  int</summary>
+<details><summary>[path: str, buffer: <MagicMock name='mock.ArrayBuffer' id='4378703728'>, root] ->  int</summary>
 
 
   ```python
@@ -120,7 +120,7 @@ writes the file with `opfs_write()` see it above
 
 ## *function*:  get\_access()
 
-<details><summary>[root: <MagicMock name='mock.FileSystemDirectoryHandle' id='4318381456'>, path: str = None, option: str = 'readwrite'] ->  <MagicMock name='mock.FileSystemSyncAccessHandle' id='4318382128'></summary>
+<details><summary>[root: <MagicMock name='mock.FileSystemDirectoryHandle' id='4384392592'>, path: str = None, option: str = 'readwrite'] ->  <MagicMock name='mock.FileSystemSyncAccessHandle' id='4384393264'></summary>
 
 
   ```python
@@ -144,7 +144,7 @@ which we are gonna using to work with the file
 
 ## *function*:  get\_dir\_handle()
 
-<details><summary>[root: <MagicMock name='mock.FileSystemDirectoryHandle' id='4318381456'>, directories: list, create=False] ->  <MagicMock name='mock.FileSystemDirectoryHandle' id='4318381456'></summary>
+<details><summary>[root: <MagicMock name='mock.FileSystemDirectoryHandle' id='4384392592'>, directories: list, create=False] ->  <MagicMock name='mock.FileSystemDirectoryHandle' id='4384392592'></summary>
 
 
   ```python
@@ -170,7 +170,7 @@ from where will be able to find the file we want to work on
 
 ## *function*:  get\_handle()
 
-<details><summary>[root: <MagicMock name='mock.FileSystemDirectoryHandle' id='4318381456'>, path: str, create=True] ->  <MagicMock name='mock.FileSystemFileHandle' id='4318381792'></summary>
+<details><summary>[root: <MagicMock name='mock.FileSystemDirectoryHandle' id='4384392592'>, path: str, create=True] ->  <MagicMock name='mock.FileSystemFileHandle' id='4384392928'></summary>
 
 
   ```python
@@ -232,7 +232,7 @@ error handling if not found pointer for a file or directory
 
 ## *function*:  opfs\_blob()
 
-<details><summary>[path: str, mode, root: <MagicMock name='mock.FileSystemDirectoryHandle' id='4318381456'>] ->  str | bytes</summary>
+<details><summary>[path: str, mode, root: <MagicMock name='mock.FileSystemDirectoryHandle' id='4384392592'>] ->  str | bytes</summary>
 
 
   ```python
@@ -258,7 +258,7 @@ fast for big files and depending on mode returns string or bytes
 
 ## *function*:  opfs\_read()
 
-<details><summary>[path: str, root: <MagicMock name='mock.FileSystemDirectoryHandle' id='4318381456'>] ->  <MagicMock name='mock.ArrayBuffer' id='4316313456'></summary>
+<details><summary>[path: str, root: <MagicMock name='mock.FileSystemDirectoryHandle' id='4384392592'>] ->  <MagicMock name='mock.ArrayBuffer' id='4378703728'></summary>
 
 
   ```python
@@ -284,7 +284,7 @@ read file to transferable buffer
 
 ## *function*:  opfs\_write()
 
-<details><summary>[path: str, buffer: <MagicMock name='mock.ArrayBuffer' id='4316313456'>, root: <MagicMock name='mock.FileSystemDirectoryHandle' id='4318381456'>]</summary>
+<details><summary>[path: str, buffer: <MagicMock name='mock.ArrayBuffer' id='4378703728'>, root: <MagicMock name='mock.FileSystemDirectoryHandle' id='4384392592'>]</summary>
 
 
   ```python

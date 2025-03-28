@@ -136,11 +136,11 @@ class OPFS:
 
 
 async def start_helper_worker():
+    """preparing, engaging and waiting initialisation of the helper worker"""
     from pyscript import PyWorker
     import base64
     import os
 
-    """preparing, engaging and waiting initialisation of the helper worker"""
 
     # Get source for the module
     script_path = os.path.abspath(__file__)
