@@ -34,6 +34,8 @@ from persipy import opfs
 
 await opfs.init()
 
+path = '/test/test.txt'
+
 with opfs(path) as file:
     await file.write('asd')
     await file.write(b'asd')
