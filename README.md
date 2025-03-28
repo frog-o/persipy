@@ -12,11 +12,6 @@ Tested with `micropython` and `pyodide` on:
 
 
 
-
-*Requirements*:
-
-Minimal version of pyscript **2025.2.4**
-
 *Instalation*:
 
 ```toml
