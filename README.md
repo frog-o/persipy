@@ -15,7 +15,8 @@ Tested with `micropython` and `pyodide` on:
 *Instalation*:
 
 ```toml
-#config.toml of the main thread script
+#config.toml
+
 [files]
 "https://cdn.jsdelivr.net/gh/Ridensium/persipy@main/dist/distro.zip" = "./persipy/*"
 ```
