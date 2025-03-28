@@ -1,0 +1,9 @@
+name = "persipy"
+main = "wrangler_worker/wrangler.py"
+compatibility_flags = ["python_workers"]
+compatibility_date = "2025-01-24"
+
+[assets]
+directory = "assets" 
+binding = "Assets"
+run_worker_first = true
