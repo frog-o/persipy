@@ -19,7 +19,7 @@ Minimal version of pyscript **2025.2.4**
 
 *Instalation*:
 
-```
+```toml
 #config.toml of the main thread script
 [files]
 "https://cdn.jsdelivr.net/gh/Ridensium/persipy@main/dist/distro.zip" = "./persipy/*"
@@ -28,7 +28,7 @@ Minimal version of pyscript **2025.2.4**
 
 *Usage*:
 
-```
+```python
 
 from persipy import opfs
 
