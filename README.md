@@ -19,6 +19,7 @@ Not tested with `pyodide`, but even if not work as it is - surely will be able w
 Not tested on binary mode (soon).
 
 *Requirements*:
+
 Minimal version of pyscript **2025.2.4**
 
 *Instalation*:
@@ -42,5 +43,10 @@ with open('/opfs/test.txt', 'w') as f:
     f.write('hello world')
 ```
 
-*Example* 
+*Planned*:
+
+to make it avaivable for modules in same way as in main thread now, so all the threads to share a common and persistent fs
+
+*Example*:
+
 [https://rdsm.pyscriptapps.com/persipy/latest/](https://rdsm.pyscriptapps.com/persipy/latest/)
