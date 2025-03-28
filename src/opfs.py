@@ -8,8 +8,24 @@ class FileOPFS:
     """Representation of file objects"""
     encoder = TextEncoder.new().encode
     
-    def __init__(self, path, mode='r', opfs:'OPFS'=None):
-    
+    def __init__(self, path:str, mode='r', opfs:'OPFS'=None):
+        """initialising file object
+        `path` - file path
+        `mode` - when set to **b** `file.read()` will return bytes
+        `opfs` - is a private and is not shown in the `with` statement
+
+        main usage entry point
+
+        ```python
+
+        with opfs(path, mode) as file:
+            await file.read()
+            await file.write(data)
+            await file.get_text()
+            await file.get_bytes()
+
+        ```
+        """
         self.path:str = path
         self.mode:str = mode
         self.opfs:'OPFS' = opfs
