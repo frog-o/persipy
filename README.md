@@ -1,9 +1,8 @@
 # persipy
-PyScript persistence fs with OPFS
+PyScript tool to work with the Origin Private File system to provide,
+persistant file storage, shared between main thread and workers
 
-This is a small tool to mount origin private file system of the browser into pyscript fs.
-
-Tested with `micropython` interpreter on:
+Tested with `micropython` and `pyodide` on:
 
     - iOS / Safari
 
@@ -12,41 +11,42 @@ Tested with `micropython` interpreter on:
     - OSX / Chrome, Firefox, Safari
 
 
-Tested with extentions: `txt`
 
-
-Not tested with `pyodide`, but even if not work as it is - surely will be able with some bugfix.
-Not tested on binary mode (soon).
 
 *Requirements*:
 
 Minimal version of pyscript **2025.2.4**
 
 *Instalation*:
+
 ```
 #config.toml of the main thread script
 [files]
-"/persipy.py" = "./persipy.py"
+"https://cdn.jsdelivr.net/gh/Ridensium/persipy@main/dist/distro.zip" = "./persipy/*"
 ```
 
 
 *Usage*:
-```
-#main.py
-#with the usual with open() as file in the main thread including modules
 
-from persipy import mount_opfs
-
-await mount_opfs() # by default mount_opfs(mount_path='/opfs')
-
-with open('/opfs/test.txt', 'w') as f:
-    f.write('hello world')
 ```
 
-*Planned*:
+from persipy import opfs
 
-to make it avaivable for modules in same way as in main thread now, so all the threads to share a common and persistent fs
+await opfs.init()
 
-*Example*:
+with opfs(path) as file:
+    await file.write('asd')
+    await file.write(b'asd')
 
-[https://rdsm.pyscriptapps.com/persipy/latest/](https://rdsm.pyscriptapps.com/persipy/latest/)
+with opfs(path, 'b') as file:
+    b = await file.read()
+
+with opfs(path) as file:
+    text = await file.read()
+
+with opfs(path, 'b') as file:
+    b = await file.get_bytes()
+
+```
+
+[Documentation Index](docs/docs/persipy.md)
