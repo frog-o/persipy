@@ -84,9 +84,13 @@ Representation of file objects
 
 
 initialising file object
+
 `path` - file path
+
 `mode` - when set to **b** `file.read()` will return bytes
+
 `opfs` - is a private and is not shown in the `with` statement
+
 
 main usage entry point
 
