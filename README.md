@@ -41,7 +41,7 @@ with opfs(path, 'b') as file:
 with opfs(path) as file:
     text = await file.read()
 
-with opfs(path, 'b') as file:
+with opfs(path) as file:
     b = await file.get_bytes()
 
 ```
