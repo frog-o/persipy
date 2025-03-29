@@ -35,4 +35,4 @@ class OPFS:
 async def start_helper_worker():
 	from pyscript import PyWorker as B;import base64 as C,os;D=os.path.abspath(__file__);E=os.path.dirname(D);F=os.path.join(E,'helpers.py')
 	with open(F,'r')as G:H=G.read()
-	I=H.encode(_A);J=C.b64encode(I).decode(_A);K=f"data:application/x-python-code;base64,{J}";A=B(K,type='pyodide');await A.ready;await A.sync.init_helper();return A
+	I=H.encode(_A);J=C.b64encode(I).decode(_A);K=f"data:application/x-python-code;base64,{J}";A=B(K,type='micropython');await A.ready;await A.sync.init_helper();return A
