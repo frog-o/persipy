@@ -173,7 +173,7 @@ async def start_helper_worker():
     data_url = f"data:application/x-python-code;base64,{base64_code}"
 
     #startup the helper worker
-    worker = PyWorker(data_url, type='pyodide')
+    worker = PyWorker(data_url, type='micropython')
     await worker.ready
     await worker.sync.init_helper()
 
